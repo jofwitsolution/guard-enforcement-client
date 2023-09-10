@@ -2,42 +2,42 @@ import React, { useRef, useEffect } from "react";
 import styles from "../styles/tailwind/index";
 
 const FullPageCarousel = () => {
-  const item_1 = useRef();
-  const item_2 = useRef();
-  const item_3 = useRef();
+  const item_1 = useRef(null);
+  const item_2 = useRef(null);
+  const item_3 = useRef(null);
 
-  const carouselItems = [item_1, item_2, item_3];
+  // const carouselItems = [item_1, item_2, item_3];
 
-  let intervalId = 0;
-  let count = 0;
+  // let intervalId = 0;
+  // let count = 0;
 
-  function playCarousel() {
-    for (let i = 0; i < carouselItems.length; i++) {
-      if (count === i) {
-        carouselItems[i].current.style.opacity = "1";
-        carouselItems[i].current.style.transform = "scale(1)";
-        continue;
-      }
-      carouselItems[i].current.style.transform = "scale(0)";
-      carouselItems[i].current.style.opacity = "0";
-    }
+  // function playCarousel() {
+  //   for (let i = 0; i < carouselItems.length; i++) {
+  //     if (count === i) {
+  //       carouselItems[i].current.style.opacity = "1";
+  //       carouselItems[i].current.style.transform = "scale(1)";
+  //       continue;
+  //     }
+  //     carouselItems[i].current.style.transform = "scale(0)";
+  //     carouselItems[i].current.style.opacity = "0";
+  //   }
 
-    count = count + 1;
-    count = count === 3 ? 0 : count;
-  }
+  //   count = count + 1;
+  //   count = count === 3 ? 0 : count;
+  // }
 
-  intervalId = setInterval(playCarousel, 10000);
+  // useEffect(() => {
+  //   intervalId = setInterval(playCarousel, 8000);
 
-  useEffect(() => {
-    return () => clearInterval(intervalId);
-  }, [intervalId]);
+  //   return () => clearInterval(intervalId);
+  // }, [intervalId]);
 
   return (
     <div
-      className="h-[40vh] md:h-screen landscape:h-screen fullpage-carousel__wrapper "
+      className="h-[40vh] md:h-screen landscape:h-screen fullpage-carousel__wrapper"
       id="top"
     >
-      <div
+      {/* <div
         ref={item_1}
         className="h-[40vh] md:h-screen landscape:h-screen fullpage-carousel__item fullpage-carousel__item-1"
       >
@@ -53,7 +53,7 @@ const FullPageCarousel = () => {
             thing, so security guides a positive and proactive culture.{" "}
           </span>
         </div>
-      </div>
+      </div> */}
       <div
         ref={item_2}
         className="fullpage-carousel__item fullpage-carousel__item-2 h-[40vh] md:h-screen landscape:h-screen"
@@ -71,7 +71,7 @@ const FullPageCarousel = () => {
           </span>
         </div>
       </div>
-      <div
+      {/* <div
         ref={item_3}
         className="fullpage-carousel__item fullpage-carousel__item-3 h-[40vh] md:h-screen landscape:h-screen"
       >
@@ -87,7 +87,7 @@ const FullPageCarousel = () => {
             of the police or emergency medical services.
           </span>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

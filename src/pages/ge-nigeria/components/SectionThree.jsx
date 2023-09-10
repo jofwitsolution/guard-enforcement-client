@@ -1,103 +1,103 @@
-import React, { useState, useEffect } from 'react';
-import styles from '../../../styles/tailwind';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import styles from "../../../styles/tailwind";
+import { Link } from "react-router-dom";
 
 const SectionThree = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [testimonials] = useState([
     {
-      text: 'Guard Enforcement provided top-notch security for our event. Their team was professional and attentive, and we felt very safe with them on the job.',
-      name: 'John Smith',
-      title: 'Event Organizer',
+      text: "Guard Enforcement provided top-notch security for our event. Their team was professional and attentive, and we felt very safe with them on the job.",
+      name: "John Smith",
+      title: "Event Organizer",
     },
     {
       text: "We've been using Guard Enforcement for our office security for several years now and they have never let us down. Their team is reliable and always goes the extra mile to ensure our safety.",
-      name: 'Jane Doe',
-      title: 'Office Manager',
+      name: "Jane Doe",
+      title: "Office Manager",
     },
     {
       text: "Guard Enforcement's team was instrumental in helping us identify and address security vulnerabilities in our facility. We now have a much stronger security system in place thanks to them.",
-      name: 'Robert Johnson',
-      title: 'Facility Manager',
+      name: "Robert Johnson",
+      title: "Facility Manager",
     },
   ]);
 
-  const intervalId = setInterval(() => {
-    setCurrentIndex((currentIndex + 1) % testimonials.length);
-  }, 5000);
+  // const intervalId = setInterval(() => {
+  //   setCurrentIndex((currentIndex + 1) % testimonials.length);
+  // }, 5000);
 
-  useEffect(() => {
-    return () => clearInterval(intervalId);
-  }, [intervalId]);
+  // useEffect(() => {
+  //   return () => clearInterval(intervalId);
+  // }, [intervalId]);
 
   const [careers] = useState([
     {
-      title: 'Security Guard',
+      title: "Security Guard",
       responsibilities:
-        'Patrolling and monitoring of assigned location, Responding to security incidents and emergencies, Writing detailed incident reports',
+        "Patrolling and monitoring of assigned location, Responding to security incidents and emergencies, Writing detailed incident reports",
       requirements:
-        'Valid security guard license, Strong communication and interpersonal skills, Ability to remain calm under pressure',
+        "Valid security guard license, Strong communication and interpersonal skills, Ability to remain calm under pressure",
     },
     {
-      title: 'Surveillance and Alarm System Technician',
+      title: "Surveillance and Alarm System Technician",
       responsibilities:
-        'Installing, configuring, and maintaining surveillance and alarm systems, Troubleshooting and resolving technical issues, Providing training to end users',
+        "Installing, configuring, and maintaining surveillance and alarm systems, Troubleshooting and resolving technical issues, Providing training to end users",
       requirements:
-        'Experience with surveillance and alarm systems, Strong technical skills, Ability to work independently and as part of a team',
+        "Experience with surveillance and alarm systems, Strong technical skills, Ability to work independently and as part of a team",
     },
     {
-      title: 'Security Consultant',
+      title: "Security Consultant",
       responsibilities:
-        'Conducting security assessments, Designing and implementing security plans, Providing training and education to clients',
+        "Conducting security assessments, Designing and implementing security plans, Providing training and education to clients",
       requirements:
-        'Experience in security consulting, Strong analytical and problem-solving skills, Excellent communication and presentation abilities',
+        "Experience in security consulting, Strong analytical and problem-solving skills, Excellent communication and presentation abilities",
     },
   ]);
 
   return (
-    <section className='pb-2 pt-10 md:py-[3rem]'>
+    <section className="pb-2 pt-10 md:py-[3rem]">
       <div className={`${styles.maxWidth}`}>
-        <div className='mx-auto px-4'>
-          <h2 className='text-center text-2xl font-medium mb-4'>
+        <div className="mx-auto px-4">
+          <h2 className="text-center text-2xl font-medium mb-4">
             Contact Information
           </h2>
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-            <div className='bg-primary p-4 md:p-8 rounded-lg shadow-lg text-white'>
-              <h3 className='text-lg font-medium'>Address</h3>
-              <p className=''>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="bg-primary p-4 md:p-8 rounded-lg shadow-lg text-white">
+              <h3 className="text-lg font-medium">Address</h3>
+              <p className="">
                 62, Totoro Road, Totoro, Abeokuta, Ogun State. Off. 1st Avenue,
                 Victory Estate, Opposite Crescent University, Adehun,
                 Abeokuta-Ayetoro Road, Abeokuta, Ogun State.
               </p>
             </div>
-            <div className='bg-primary p-4 md:p-8 rounded-lg shadow-lg text-white'>
-              <h3 className='text-lg font-medium'>Phone</h3>
-              <p className=''>(081) 6484 5232</p>
+            <div className="bg-primary p-4 md:p-8 rounded-lg shadow-lg text-white">
+              <h3 className="text-lg font-medium">Phone</h3>
+              <p className="">(081) 6484 5232</p>
             </div>
-            <div className='bg-primary p-4 md:p-8 rounded-lg shadow-lg text-white'>
-              <h3 className='text-lg font-medium'>Email</h3>
-              <p className=''>info@guardenforcement.com</p>
+            <div className="bg-primary p-4 md:p-8 rounded-lg shadow-lg text-white">
+              <h3 className="text-lg font-medium">Email</h3>
+              <p className="">info@guardenforcement.com</p>
             </div>
           </div>
         </div>
-        <div className='mx-auto px-4 mt-[4rem]  md:mt-[6rem]'>
-          <h2 className='text-center text-2xl font-medium mb-4'>Careers</h2>
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+        <div className="mx-auto px-4 mt-[4rem]  md:mt-[6rem]">
+          <h2 className="text-center text-2xl font-medium mb-4">Careers</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {careers.map((career, index) => (
               <div
                 key={index}
-                className='bg-white p-4 md:p-8 rounded-lg shadow-lg'
+                className="bg-white p-4 md:p-8 rounded-lg shadow-lg"
               >
-                <h3 className='text-lg font-medium'>{career.title}</h3>
-                <p className='text-gray-700'>
+                <h3 className="text-lg font-medium">{career.title}</h3>
+                <p className="text-gray-700">
                   Responsibilities: {career.responsibilities}
                 </p>
-                <p className='text-gray-700'>
+                <p className="text-gray-700">
                   Requirements: {career.requirements}
                 </p>
                 <Link
-                  to={'/recruitments'}
-                  className='inline-block bg-primary text-white py-2 px-4 rounded-lg hover:bg-primaryAlt mt-2'
+                  to={"/recruitments"}
+                  className="inline-block bg-primary text-white py-2 px-4 rounded-lg hover:bg-primaryAlt mt-2"
                 >
                   Apply Now
                 </Link>
@@ -105,7 +105,7 @@ const SectionThree = () => {
             ))}
           </div>
         </div>
-        <div className='mx-auto px-4 mt-[4rem]  md:mt-[6rem]'>
+        {/* <div className='mx-auto px-4 mt-[4rem]  md:mt-[6rem]'>
           <h2 className='text-center text-2xl font-medium mb-4'>
             Testimonials
           </h2>
@@ -120,7 +120,7 @@ const SectionThree = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

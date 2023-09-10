@@ -6,6 +6,7 @@ import { FiMonitor } from "react-icons/fi";
 import { Ri24HoursFill } from "react-icons/ri";
 
 import styles from "../../../styles/tailwind";
+import { Link } from "react-router-dom";
 
 const SectionTwo = () => {
   return (
@@ -32,9 +33,11 @@ const SectionTwo = () => {
             className="flex-1 xxs:mb-5 sm:mb-10 md:mb-0"
           >
             <GiSecurityGate fontSize={55} className="text-primary mb-4" />
-            <h3 className={`${styles.headerThreeBlack}`}>
-              Man guiding and Security Assessment
-            </h3>
+            <Link to="/services">
+              <h3 className={`${styles.headerThreeBlack}`}>
+                Man guiding and Security Assessment
+              </h3>
+            </Link>
             <p className="">
               Our team of highly trained security professionals is ready to
               protect you and your property from any potential threats. Whether
@@ -48,9 +51,11 @@ const SectionTwo = () => {
             className="flex-1 xxs:mb-5 sm:mb-10 md:mb-0"
           >
             <FiMonitor fontSize={55} className="text-primary mb-4" />
-            <h3 className={`${styles.headerThreeBlack}`}>
-              Surveillance and Alarm System Installation
-            </h3>
+            <Link to="/services#surveilance-and-alarm">
+              <h3 className={`${styles.headerThreeBlack}`}>
+                Surveillance and Alarm System Installation
+              </h3>
+            </Link>
             <p className="">
               We offer a range of surveillance and alarm systems to help protect
               your property and assets. Our systems are designed to be
@@ -63,9 +68,11 @@ const SectionTwo = () => {
             className="flex-1 xxs:mb-2 sm:mb-10 md:mb-0"
           >
             <Ri24HoursFill fontSize={55} className="text-primary mb-4" />
-            <h3 className={`${styles.headerThreeBlack}`}>
-              Crowd Control and Event Management
-            </h3>
+            <Link to="/services#crowd-control">
+              <h3 className={`${styles.headerThreeBlack}`}>
+                Crowd Control and Event Management
+              </h3>
+            </Link>
             <p className="">
               Our team is skilled in managing crowds and ensuring the safety of
               attendees at events of all sizes. We can provide security

@@ -1,5 +1,6 @@
 import geHeroHome from "../assets/images/ge-hero-home.jpeg";
 import geHeroHomeSmall from "../assets/images/ge-hero-home-small.jpeg";
+import geComputers from "../assets/images/ge-computers.jpg";
 import ge1 from "../assets/images/ge-1.jpeg";
 import ge3 from "../assets/images/ge-3.jpeg";
 import ge5 from "../assets/images/ge-5.jpeg";
@@ -16,10 +17,12 @@ import farm from "../assets/images/farm.png";
 import des from "../assets/images/des.png";
 import CEO from "../assets/images/CEO.jpeg";
 import guardenforcement from "../assets/images/guardenforcement.png";
+import crowdControl from "../assets/images/crowd-control.jpeg";
 
 export const images = {
   geHeroHome,
   geHeroHomeSmall,
+  geComputers,
   ge1,
   ge3,
   ge5,
@@ -36,4 +39,5 @@ export const images = {
   des,
   CEO,
   guardenforcement,
+  crowdControl,
 };

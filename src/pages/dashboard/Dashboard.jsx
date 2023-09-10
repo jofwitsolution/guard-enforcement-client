@@ -6,6 +6,7 @@ import { FiUsers, FiUserPlus } from "react-icons/fi";
 import { AiOutlineLogout, AiOutlineSetting } from "react-icons/ai";
 import auth from "../../services/authService";
 import Meta from "../../components/Meta";
+import UserMobileMenu from "../../components/navigation/UserMobileMenu";
 
 const activeStyle =
   "mb-2 flex w-full items-center h-max gap-3 font-bold bg-[#F1F1F1] py-2 pl-3 rounded-md";
@@ -21,6 +22,7 @@ const Dashboard = () => {
   return (
     <div className="flex mt-[1px] bg-secondaryBackground gap-3">
       <Meta title={"Dashboard - Guard Enforcement"} />
+      <UserMobileMenu />
       <div className="hidden lg:flex flex-[15%] bg-white h-screen shadow-lg py-6 border-r-[1px] border-[rgba(0,0,0,0.2)]">
         <div className="flex flex-col w-full pl-4">
           <NavLink
