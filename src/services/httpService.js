@@ -1,8 +1,8 @@
 import axios from "axios";
 import { toast } from "react-toastify";
 
-// axios.defaults.baseURL = "https://guard-enforcement-backend.vercel.app/api";
-axios.defaults.baseURL = "/api";
+axios.defaults.baseURL = "https://guard-enforcement-backend.vercel.app/api";
+// axios.defaults.baseURL = "/api";
 
 axios.interceptors.response.use(null, (error) => {
   const expectedError =

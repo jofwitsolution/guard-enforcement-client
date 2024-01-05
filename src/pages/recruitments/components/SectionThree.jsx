@@ -1,16 +1,16 @@
-import React from 'react';
-import { images } from '../../../constants/images';
-import styles from '../../../styles/tailwind';
+import React from "react";
+import { images } from "../../../constants/images";
+import styles from "../../../styles/tailwind";
 
 const SectionThree = () => {
   return (
-    <section className='py-[2rem] md:py-[5rem]'>
+    <section className="py-[2rem] md:py-[5rem]">
       <div className={`${styles.maxWidth}`}>
-        <div className=' flex flex-col md:flex-row gap-4 md:gap-8 items-center justify-start shadow-lg p-5 md:p-0'>
-          <div className=''>
-            <img src={images.ge11} alt='Guard Enforcement' className='' />
+        <div className=" flex flex-col md:flex-row gap-4 md:gap-8 items-center justify-start shadow-lg p-5 md:p-0">
+          <div className="">
+            <img src={images.ge11} alt="Guard Enforcement" className="" />
           </div>
-          <div className='md:w-[50%]'>
+          <div className="md:w-[50%]">
             <p>
               As a security professional at Guard Enforcement, you will have the
               opportunity to work on a variety of projects and to gain
@@ -21,14 +21,14 @@ const SectionThree = () => {
             </p>
           </div>
         </div>
-        <div className='mt-10'>
+        <div className="mt-10">
           <p>
             For the position of security guard, the following are the
             application requirements:
           </p>
 
-          <div className='ml-5 mt-5'>
-            <ul className='list-disc'>
+          <div className="ml-5 mt-5">
+            <ul className="list-disc">
               <li>
                 Education: SSCE/NCE/OND/HND/Bachelor's degree/any equivalent
               </li>
@@ -39,7 +39,7 @@ const SectionThree = () => {
               <li>Minimum height of 5ft and maximum weight of 90kg</li>
             </ul>
           </div>
-          <div className='flex items-center my-5'>
+          {/* <div className='flex items-center my-5'>
             click{' '}
             <a
               href='https://forms.gle/C9Rx1ovrcStqS1vG8'
@@ -50,45 +50,53 @@ const SectionThree = () => {
               Apply Now
             </a>{' '}
             to apply
-          </div>
+          </div> */}
 
           <p>
-            Other positions should send their CV to
-            recruitment@guardenforcement.com. Qualified applicants will be
-            contacted after their CV has been reviewed by our recruitment team.
+            Send your CV to{" "}
+            <a
+              href="mailto: recruitment@guardenforcement.com"
+              target={"_blank"}
+              rel="noreferrer"
+              className="text-blue-500 hover:text-primaryAlt"
+            >
+              recruitment@guardenforcement.com
+            </a>
+            . Qualified applicants will be contacted after their CV has been
+            reviewed by our recruitment team.
           </p>
 
-          <div className='my-5'>
+          <div className="my-5">
             For recruitment enquiries contact;
             <div>
-              WhatsApp:{' '}
+              WhatsApp:{" "}
               <a
-                href='https://wa.me/2348137192766'
-                target={'_blank'}
-                rel='noreferrer'
-                className='text-primary hover:text-primaryAlt'
+                href="https://wa.me/2348137192766"
+                target={"_blank"}
+                rel="noreferrer"
+                className="text-primary hover:text-primaryAlt"
               >
                 +2348137192766
               </a>
             </div>
             <div>
-              WhatsApp:{' '}
+              Email:{" "}
               <a
-                href='https://wa.me/2348077050852'
-                target={'_blank'}
-                rel='noreferrer'
-                className='text-primary hover:text-primaryAlt'
+                href="mailto: oluwafemi.faleye@guardenforcement.com"
+                target={"_blank"}
+                rel="noreferrer"
+                className="text-primary hover:text-primaryAlt"
               >
-                +2348077050852
+                oluwafemi.faleye@guardenforcement.com
               </a>
             </div>
             <div>
-              Email:{' '}
+              Email:{" "}
               <a
-                href='mailto: info@guardenforcement.com'
-                target={'_blank'}
-                rel='noreferrer'
-                className='text-primary hover:text-primaryAlt'
+                href="mailto: info@guardenforcement.com"
+                target={"_blank"}
+                rel="noreferrer"
+                className="text-primary hover:text-primaryAlt"
               >
                 info@guardenforcement.com
               </a>
